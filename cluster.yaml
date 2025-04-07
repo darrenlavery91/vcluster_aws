@@ -1,0 +1,18 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+ name: vcluster-demo
+ region: af-south-1
+nodeGroups:
+ - name: ng-1
+   instanceType: t3.medium
+   desiredCapacity: 3
+   iam:
+     withAddonPolicies:
+       ebs: true
+   volumeSize: 80
+
+addons:
+- name: aws-ebs-csi-driver
+  wellKnownPolicies:      # this setting adds IAM and service account
+    ebsCSIController: true
