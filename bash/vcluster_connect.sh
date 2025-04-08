@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# check out: https://medium.com/p/5e7057744bcc/edit
 # Get the list of vcluster names
 vclusters=$(vcluster list | awk 'NR>3 {print $1}')
 

@@ -2,6 +2,8 @@
 
 If you don’t already have an EKS cluster, start by creating one. You can use Terraform for automation, but here’s a quick manual setup using `eksctl`.
 
+Check out: https://medium.com/p/5e7057744bcc/edit
+
 ---
 
 ### Prerequisites
